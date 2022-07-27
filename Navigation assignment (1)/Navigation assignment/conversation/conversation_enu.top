@@ -1,0 +1,15 @@
+topic: ~conversation()
+language: enu
+
+u: (Hey) Hey user, I am Pepper and i am at your service.
+u: (Glad to know that) Great! What can i do for you?
+u: (Please go the following coordinates) Sure $go = 1
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello

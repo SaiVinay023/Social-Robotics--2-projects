@@ -1,0 +1,26 @@
+topic: ~Thinking()
+language: enu
+
+u:(What fears you) I fear nothing
+u:^private(seriously) Yes
+u:^private(_* destroy you) WHAT? $Thinking=1
+u:^private(["Just kidding" "I am joking"]) oh man! You scared me $relaxed=1
+u:^private(I cant[destroy dismantle] you because i really _* you) I $1 you too.
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
+
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello

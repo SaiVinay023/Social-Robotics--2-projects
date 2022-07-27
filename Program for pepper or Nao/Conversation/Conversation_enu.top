@@ -1,0 +1,28 @@
+topic: ~Conversation()
+language: enu
+concept: (reply) ^rand["Hey user!" "Hello user!"] ^rand["How are you?" "How you doing?"]
+concept: (Bored) ^rand["Thats Great!" "Good to Know"] $Bored = 1
+
+u: (["Hey robot" "Hello Robot"  "Hi Robot"]) ~reply
+u: (["I am fine,thanks for asking" "I am good" "I am doing fine"]) ~Bored 
+u: (What is your name) My name is Nao. And yours?
+u:(My name is _*) Nice meeting you $1
+u: (_* yourself) I am a humanoid Robot developed by a French company named Aldebaran
+u:(You look bored) I am getting bored if i am idle
+
+ 
+
+   
+
+
+
+#u: (terror) okay $terror=1
+#u: (shame) okayyy $shame=1
+# Defining extra concepts out of words or group of words
+#concept:(hello) [hello hi hey "good morning" greetings]
+
+# Catching inputs and triggering outputs
+#u:(e:onStart) $onStopped=1
+
+# Replying to speech
+#u:(~hello) ~hello
